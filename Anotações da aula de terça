@@ -86,3 +86,27 @@ Operadores lógicos
 
 ´ Veremos o uso de operadores relacionais e lógicos com maiores detalhes junto com mas estruturas de controle de fluxo ( decisão e repetição), da linguagem JAVA. ´
 
+Analisando um cenário com Orientação a Objetos
+
+  Um mundo cheio de Objetos
+    L_> Existem soluções que podem ser adaptadas mais para serem eficientes do que eficazes.
+    L_> Nesta análise, vamos nos limitar ao que iremos propor, por meio de diferentes exemplos.
+    L_> Na análise dos detalhes, é bom poder diferenciar alguns recursos itens: 
+                L_> coisas que realizam ações ( pessoas, entidades, maquinas etc ) 
+                L_> Caracteristicas ( Sustantivo ) 
+                L_> Detalhamento ou Requisitos Especiais.
+
+Exp:.
+      Analisando o texto abaixo, onde Antônio detalha como seria o processo de um cliente na clínica veterinaria, podemos destacar as palavras que nos ajudarão posteriormente.
+
+  -> Como analisar a partir do paradigma orientado á objetos
+    L_> A partir da visão vista, uma proposta de solução seria 
+
+  Quais Objetos conseguimos identificar nas jornadas do usuário?
+    -> cliente     | public class void Cliente
+    -> veterinario | public class void Veterinario
+    -> diagnosticos| public class void Diagnostico
+
+Atributos de um Objeto
+  -> Na POO, Chamamos de atributos as caracteristicas distintas de um objeto, isto é, aquelas que nos permitem dar.
+
