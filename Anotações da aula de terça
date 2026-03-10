@@ -57,3 +57,24 @@ Tipo String
 *
   A partir dessa variável veremos adiante como utilizar alguns desses métodos.
 
+Operadores Matematicos
+
+tipos de dados primitivos
+
+*
+  public class ExemploTiposEVariavies { 
+    Public static void main(String[] args){
+      int nota1 = 10
+
+*
+
+Operadores Relacionais
+
+  Maior |  > 
+  Menor |  < 
+  Igual |  == ou .equals()
+  Maior ou Igual |  >=
+  Menor ou igual |  <=
+  Diferente |  !=
+  Atribuição | =
+
