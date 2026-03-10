@@ -78,3 +78,8 @@ Operadores Relacionais
   Diferente |  !=
   Atribuição | =
 
+Operadores lógicos 
+
+  AND | && ( retorna verdadeiro se ambas as avaliações forem verdadeiras)
+  OR  | || ( Retorna verdadeiro se uma das duas avaliações for verdadeira) 
+  NOT | !  ( Retorna o oposto do resultado da avaliação ) 
