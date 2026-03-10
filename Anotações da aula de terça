@@ -6,3 +6,54 @@ L>  ( 50% Prova escrita / 50% Prática )
                                L> ex. Agrupadores ( fazer tudo agrupado ) 
                                L> ex. Assincronos ( de casa ) 
                                L> Projetos        ( em Equipe ) 
+
+Identificadores
+
+-> são usados para determinar nomes de classes, variaveis, parametros e metodos.
+L> em java, os identificadores devem ser iniciados com: 
+  L> letra
+  L> sublinhado 
+
+  Identificadores e variaveis/atributos
+    L> em java, os indentificadores são Case-sensivite
+        -> Tipo dataNascimento
+        -> Tipo DataNascimento
+        -> datanascimento
+        -> Datanascimento
+
+  Identificadores
+    L> Converções de uso: se o identificzdor for um nome composto cada nova palavra começa com a letra maiuscula:
+              L_> variávelComNomeComposto
+                  primeiroNome
+                  ultimoNome
+              ClasseComNomeComposto
+                  PessoaFisica
+
+Tipos de dados
+
+  L> Tipo de dados primitivos
+      L> int, float, char , boolean.
+
+ex:.
+  *
+   public class ExempoTiposEVariaveis { 
+      Public static void main (String[] args ) { 
+          int nota1 = 10;
+          int Nota2 = 5;
+          float mediaAluno;
+          char status_disciplina;
+          boolean aprovado;
+
+Tipo String
+
+  L_> Para usar dados de tipo de texto, vamos declarar-los como string.
+      L> Strings nos permitem usar funções (  métodos ) já existentes na Biblioteca Java
+*   
+  public statics void main(String[] args ){ 
+    String nomeNula;   // String nula
+    String nomeInicializada = "joão"; // String Inicializada
+    String nomeVazia = ""  // String Vazia
+
+*
+  A partir dessa variável veremos adiante como utilizar alguns desses métodos.
+
