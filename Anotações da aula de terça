@@ -83,3 +83,6 @@ Operadores lógicos
   AND | && ( retorna verdadeiro se ambas as avaliações forem verdadeiras)
   OR  | || ( Retorna verdadeiro se uma das duas avaliações for verdadeira) 
   NOT | !  ( Retorna o oposto do resultado da avaliação ) 
+
+´ Veremos o uso de operadores relacionais e lógicos com maiores detalhes junto com mas estruturas de controle de fluxo ( decisão e repetição), da linguagem JAVA. ´
+
