@@ -107,6 +107,18 @@ Exp:.
     -> veterinario | public class void Veterinario
     -> diagnosticos| public class void Diagnostico
 
-Atributos de um Objeto
-  -> Na POO, Chamamos de atributos as caracteristicas distintas de um objeto, isto é, aquelas que nos permitem dar.
+  Atributos de um Objeto
+    -> Na POO, Chamamos de atributos as caracteristicas distintas de um objeto, isto é, aquelas que nos permitem dar.
+
+Modelando nossas classes 
+
+  [ Veterinario ] 
+
+  [ - Nome: string ] 
+  [ - Sobrenome: String ] 
+  [ - Salario: double ] 
+
+  [ + Veterinario(nome, sobrenome, matricula)
+  [ + cobrar(): void
+  [ + fatura(): ] 
 
