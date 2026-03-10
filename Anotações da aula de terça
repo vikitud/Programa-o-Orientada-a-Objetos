@@ -119,6 +119,9 @@ Modelando nossas classes
   [ - Salario: double ] 
 
   [ + Veterinario(nome, sobrenome, matricula)
+
+
+
   [ + cobrar(): void
   [ + fatura(): ] 
 
