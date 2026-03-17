@@ -216,3 +216,36 @@ O operador 'this'
   -também pode ser usados para chamar metodos do proprio objeto
     L> na pratica:"chame o metodo deste objeto".
 
+  - chamar outro construtor da mesma classe 
+
+  *
+  public class produto { 
+    string nome;
+    DOUBLe preco
+
+    public produto(string nome) { 
+      this (nome, 0.0);
+  } 
+  public produto(string nome double preco) { 
+   this.nome = nome;
+    this.preco = preco;
+   }
+  }
+  *
+
+    class produto { string, nome;  
+                    float, valor;
+
+1) 
+
+  produto(string nome, float valor){ 
+            this.name = name;
+            this.valor = valor;
+} 
+
+2) 
+
+produto(string nome){
+        this.name = nome
+} 
+
