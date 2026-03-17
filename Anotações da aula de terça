@@ -207,3 +207,12 @@ O constructor da classe artigo
       this.estoque = quantidade;
  }
 }
+*
+
+O operador 'this'
+
+  - palavra reservada para linguagem java para diferenciar atributos da classe de parametros do metodo  ou construção
+
+  -também pode ser usados para chamar metodos do proprio objeto
+    L> na pratica:"chame o metodo deste objeto".
+
