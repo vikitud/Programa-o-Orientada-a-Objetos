@@ -159,4 +159,12 @@ Construindo um metodo
     return
 } 
 
+        ( quando o tipo " retorno " for void, esta construção não deve ocorrer ) 
 
+      imt  numero = 1 0,
+
+      pessoa pessoafisica,
+      tipo   identif
+      ______________________
+      V V V V V V V V V V V
+      Declaração da variavel
