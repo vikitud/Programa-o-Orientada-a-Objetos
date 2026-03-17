@@ -121,19 +121,42 @@ Modelando nossas classes
   [ + Veterinario(nome, sobrenome, matricula)
 
 
+  [ + cobrar(): void
+  [ + fatura(): ] 
+
+
 17/03/2026
 
 Definindo um método
 
-Devemos considerar três itens:
+  Devemos considerar três itens:
 
-- oq a função retorna quando chamado
-- o nome
-- os parametros recebidos
+  - oq a função retorna quando chamado
+  - o nome
+  - os parametros recebidos
+  Sintaxe
+      [ Tipo de retorno nomedafunção ( parametro ) ] 
 
+  Tipodedado indentificadoresvariavel
+  ^^^^^^     ^^^^
+  String     nome;
 
+  tiposderetorno identificando metodo (parametro ) 
+                                    (string[] args)
+                                    ^^^^       ^^^^ 
+                                    tipo       identificadores
 
+    Exemplos:.
 
-  [ + cobrar(): void
-  [ + fatura(): ] 
+    int soma ( int numeroA, int numeroB)
+
+Construindo um metodo
+
+  Tipo de nomedafunção(parametros)
+{
+    bloco de comandos
+
+    return
+} 
+
 
