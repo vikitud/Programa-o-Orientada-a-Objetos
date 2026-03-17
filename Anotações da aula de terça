@@ -163,8 +163,47 @@ Construindo um metodo
 
       imt  numero = 1 0,
 
-      pessoa pessoafisica,
+  //   inicialização ^
+
+      pessoa pessoafisica, // = new pessoa ("jonatas")
       tipo   identif
       ______________________
       V V V V V V V V V V V
       Declaração da variavel
+
+
+Estrutura de um metodo construtor
+
+  construindo a classe cliente
+
+    cliente (nome:String, telefone: int, cpf: int)
+      ^
+    sempre tem o...
+
+Acessando propriedades de um objeto
+    para usar um atributo ou metodo, precisamos de um objeto
+*
+
+  pessoa p1 = new pessoa(); // -> inicializaçãode objeto
+  p1.nome = " carlos "; 
+  P1.apresentar(); 
+
+O constructor da classe artigo
+      
+                    [ artigo ] 
+                  [descricao: string ]
+                  [preco_venda: double ]
+                  [estoque...
+
+  *
+  Public class Artigo{
+  string descrição;
+  double preco_venda;
+  int estoque;
+
+  public Artigo(string descricao, int quantidade, double preco){
+      this.descricao = descricao;
+      this.preco_venda = preco;
+      this.estoque = quantidade;
+ }
+}
