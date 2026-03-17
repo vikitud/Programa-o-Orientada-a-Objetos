@@ -236,16 +236,21 @@ O operador 'this'
     class produto { string, nome;  
                     float, valor;
 
-1) 
+                                      1) 
+                                      
+                                        produto(string nome, float valor){ 
+                                                  this.name = name;
+                                                  this.valor = valor;
+                                      } 
+                                      
+                                      2) 
+                                      
+                                      produto(string nome){
+                                              this.name = nome
+                                      } 
 
-  produto(string nome, float valor){ 
-            this.name = name;
-            this.valor = valor;
-} 
-
-2) 
-
-produto(string nome){
-        this.name = nome
-} 
-
+  produto p1,p2;
+  p1 = new produto("lapis");
+//                  ( 2 )
+  p2 = new produto("caderno", 10,90);
+//                             ( 1 )  
