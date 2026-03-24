@@ -479,3 +479,55 @@ Conversão de tipos
 Conversão explcita
   -> é a necessidade quando desejamos converter um valor de um tipo de dado em outro que não seja compativlel com o dado original.
   -> é feita por meio de uma expressão de conversão de tipos
+  exp:.
+        double d = 10.0;
+        int i = (int) d;
+        System.out.println(i); //10
+
+Conversão de tipos Implicita
+  -> é necessário quando desejamos converter um valor de um tipo de daddo em outro que não seja compativel com o dado original
+  -> é feita automaticamente pelo compilador da linguagem nãosendo necessario nenhum tipo de demarcação
+
+Oque acontece nesse código:
+  *
+  double d = 10.99;
+  int = d;
+  system.out.println(i);
+  *
+ele vai tentar coisa por conversão, mas n vai
+
+
+Metodos wrapper
+  ->tratam-se de uma serie de metodos uteis para manipulação de objetos primitivos.
+
+  Metodos de parsing: Permitem a conversão de string em tipos primitivos equivalentes e
+  s~çao uteis quyando vc precisa lre dados de uma fonta externa e convertelos em tipos primitivos.
+
+  Metodos de conversão: Permitem a conversão de tipos primitivos para objetos e vice-versa.
+
+
+Estrutura de Decisão
+
+  Visão Algoritmica
+  -> calculo da media de um aluno sob a forma de um fluxograma
+
+  Pseudocodigo
+  *
+  algoritmo calculo_media;
+  var n1,n2,media:real;
+  inicio
+  leia(n1,n2);
+  media<-(n1+n2)/2;
+  se media >=
+  ...
+  *
+
+  Estrutur de decisão mem java
+  *
+  if ( expressãobooleana){
+    conjuntodesentencas
+  } else if {
+    conjuntoalternativo
+  } else {
+    conjuntoalternativo2
+  }
