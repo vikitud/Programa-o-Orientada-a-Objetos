@@ -264,3 +264,211 @@ Constantes
   - por convenção, os nomes de constantes são escritos em Caixa Alta
 
   exp:. final tipo nome_da_constante = valor;
+
+
+
+Tarefa dia 24/03/2006:
+
+*
+
+import java.util.Scanner;
+
+class Cliente {
+    String nome;
+    String telefone;
+
+    public Cliente(String nome) {
+        this(nome, "Não informado");
+    }
+
+    public Cliente(String nome, String telefone) {
+        this.nome = nome;
+        this.telefone = telefone;
+    }
+}
+
+class Produto {
+    String nome;
+    double preco;
+
+    public Produto(String nome) {
+        this(nome, 0.0);
+    }
+
+    public Produto(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
+    }
+}
+
+class Pedido {
+    Cliente cliente;
+    Produto produto1;
+    Produto produto2;
+    double valorTotal;
+
+    public Pedido(Cliente cliente, Produto produto1) {
+        this(cliente, produto1, null);
+    }
+
+    public Pedido(Cliente cliente, Produto produto1, Produto produto2) {
+        this.cliente = cliente;
+        this.produto1 = produto1;
+        this.produto2 = produto2;
+        calcularTotal();
+    }
+
+    public void calcularTotal() {
+        valorTotal = produto1.preco;
+        if (produto2 != null) {
+            valorTotal += produto2.preco;
+        }
+    }
+
+    public void exibirPedido() {
+        System.out.println("===== PEDIDO =====\n");
+
+        System.out.println("Cliente: " + cliente.nome);
+        System.out.println("Telefone: " + cliente.telefone + "\n");
+
+        System.out.println("Produto: " + produto1.nome);
+        System.out.println("Preço: " + produto1.preco + "\n");
+
+        if (produto2 != null) {
+            System.out.println("Produto: " + produto2.nome);
+            System.out.println("Preço: " + produto2.preco + "\n");
+        }
+
+        System.out.println("Total: " + valorTotal);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Nome: ");
+        String nome = sc.nextLine();
+
+        System.out.print("Telefone: ");
+        String telefone = sc.nextLine();
+
+        Cliente cliente;
+        if (telefone.isEmpty()) {
+            cliente = new Cliente(nome);
+        } else {
+            cliente = new Cliente(nome, telefone);
+        }
+
+        System.out.print("Produto 1: ");
+        String nome1 = sc.nextLine();
+
+        System.out.print("Preço 1: ");
+        double preco1 = sc.nextDouble();
+        sc.nextLine();
+
+        Produto p1 = new Produto(nome1, preco1);
+
+        System.out.print("Deseja outro produto? (s/n): ");
+        String op = sc.nextLine();
+
+        Produto p2 = null;
+
+        if (op.equalsIgnoreCase("s")) {
+            System.out.print("Produto 2: ");
+            String nome2 = sc.nextLine();
+
+            System.out.print("Preço 2: ");
+            double preco2 = sc.nextDouble();
+
+            p2 = new Produto(nome2, preco2);
+        }
+
+        Pedido pedido;
+
+        if (p2 == null) {
+            pedido = new Pedido(cliente, p1);
+        } else {
+            pedido = new Pedido(cliente, p1, p2);
+        }
+
+        pedido.exibirPedido();
+
+        sc.close();
+    }
+}
+
+*
+
+24/03/2026
+
+
+comentario
+regras:
+  -> comentarios nao pode ser aninhados
+  -> não podem ocorrer denmtro de string ou literais
+  -> as notações /* e */ não tem singnificdo dentro dos comentarrios //;
+  -> a notação // não tem significado dentro dos comentarios /* e /**
+  exp:.
+        "string /*count*/"  ele vai contar como texto e n comentario
+
+Javadoc : 
+          -> é o tipo especial de com,entario, utilizado para gerar documentação da API do codigo java
+
+Tipos Wrappers
+
+  -> os tipos wrappers são classes que apresentam os tipos primitivos
+  -> são imutaveis, oq significa que uma vez criado um objeto wrapper, seu valor não pode ser alterado para garantir segurança
+  -> Os tipos primitivos não são objetos, mas as vezes é necessário trbalhar com eles como se fossem
+
+Exemplo:
+-> quando precisamos passar um valor primitivo para um parametro de um metodo, vc prre...
+
+        Wrapper Class Hierarquia
+   / object \
+number   boolean 
+
+Integer
+  -> integer como classe e não como tipo primitivo, tem maneiras diferentes de usra para usor uma integre temos duas possibildades
+*
+integre valor = 0;
+*
+Neste caso, criamos e definimos uma intgre dando a ela um valor inicial de 0.
+integer num = new integer(1);
+Na segunda forma, fazemos algo semelhante, mas a parte a esquerdaé a definição a parte da direita e a crioção...
+
+Verificamos a relação entre os dois numeros integer, usando classe
+Veja os metodos usados .equal(), .compareTo()
+*
+public static void main(String[] args){
+  integer valor1 = 10;
+  integer valor 2 = 30;
+  int comparar;
+
+  if (valor1.equals(valor2)){
+    System.  .println("são iguais");
+}else[
+    Comparar=valor1.compareTo(valor2);
+    if ( comparar>0 )
+System.  .println("valor1 e maior que valor2");
+else
+System.  .println("valor2 é maior que valor1");
+}
+}
+*
+class integer{
+...
+int valor
+equals integer objeto){
+retorn x
+*
+
+Float
+  *
+  Float coeficiente = 2.5f;
+  *
+
+  -> Neste caso, definimos e criamos um float, dando a ele um valor inicial de 2,5f, o f significa float, se não colocarmos, assume-se que seja algo do tipo double
+  -> Float num = new Float(0.5);
+  -> quando definomsos apenas algo do tipo float, seu valor incial é null, como no innmtegerm, ´ortant sendo necessário valor inicial 
