@@ -531,3 +531,25 @@ Estrutura de Decisão
   } else {
     conjuntoalternativo2
   }
+  *
+  Switch (expressao){
+  case valor1:
+    conjuntodesentecas;
+    break;
+  Case valor2:
+    sentencasAlternativas;
+    break;
+  }
+  *
+
+  Exerciciop 1 - decisão simples
+  -> problema: ler um numero e informar se é positivo
+
+  *
+  if ( numero > 0 ) 
+  *
+
+  
+  
+  
+  
