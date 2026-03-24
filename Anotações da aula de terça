@@ -472,3 +472,10 @@ Float
   -> Neste caso, definimos e criamos um float, dando a ele um valor inicial de 2,5f, o f significa float, se não colocarmos, assume-se que seja algo do tipo double
   -> Float num = new Float(0.5);
   -> quando definomsos apenas algo do tipo float, seu valor incial é null, como no innmtegerm, ´ortant sendo necessário valor inicial 
+
+Conversão de tipos
+  -> é necessário quando desejamos armazenar um valor na linha
+
+Conversão explcita
+  -> é a necessidade quando desejamos converter um valor de um tipo de dado em outro que não seja compativlel com o dado original.
+  -> é feita por meio de uma expressão de conversão de tipos
