@@ -560,3 +560,47 @@ Estruturas de repetição
   -> são baseadas em:
     -> condição -> executar enquanto for verdadeira
     -> contagem -> exexcutar um numero fixo de vezes 
+( laço precisa sber quantas vezes ele vai contar antes de iniciar ) 
+
+  Tipos de repetição
+
+  -> Repetição com contador (determinada):
+    -> sabemos quantas vezes repetir
+    -> exemplo: imprimir numeros de 1 a 100
+
+  -> repetição com condição
+    -> ...
+
+  Fulox de execução
+    -> Estrutura de repetição envolve tres etapas
+      -> inicialização -> define o pontode partida
+
+  Cuidados Importantes
+
+  -> Garantir que a condição em algum momento será falsa -> evitar loop infinito
+  -> Definir condição de parada...
+
+  Estruturas de controle em java
+  Repetição
+
+*
+for (inicialização; condição; atualização){ 
+  //bloco de codigo
+} 
+public class ExemploFor
+public static void main(String[] args){
+for (int i = 1; i <= 5; i++) { 
+System.out.println("numero: " + i);
+  }
+ }
+}
+
+*
+
+i    |  i <=5        |  Saida  |
+1    |  1 <=5->T     |  NUM 1  |
+2    |  2 <=5->T     |  NUM 2  |
+3    |  3 <= 5 -> T  |  NUm 3  |
+4    |  4 <= 4 -> T  |  NUM 4  |
+5    |  5 <= 5 -> T  |  NUM 5  |
+6    |  6 <  5  -> f
