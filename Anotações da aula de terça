@@ -679,3 +679,59 @@ Uso de length para obter o tamanho
   *
 
   
+Laços com arrays
+
+Laço For
+
+  *
+  String[] frutas = { "Maçã", "Banana", "Laranja"};
+
+  for (int i = 0; i < frutas.legth; i++) 
+...
+  *
+
+Arrays Multidimensionais
+  -> declaração e inicializaçõa
+
+  *
+  int [][] matriz = new int [2][3];
+  int [][] tabela = { {1,2,3}, {4,5,6};
+
+  *
+
+Fixação Exercicio:
+    
+    *
+    public class ExemploArraySomaMedia {
+    public vstatic void main(String[] args) ( 
+    Scanner sc = new Scanner(System.in);
+    
+    int[] numero = new
+    ...
+    *
+
+Construtores:
+
+1)
+
+Class Pessoa { 
+Pessoa(String nome, int idade ) { 
+this (nome )
+this.idade = idade;
+}
+                                                        void imprimit(String texto);
+                                                        void imprimit(Int    numero);
+2)
+
+Pessoa(String nome){
+  this.nome=nome;
+}
+
+"sobrecrga do metodo é relacionada..."
+
+Sobrecarga de metodos
+  -> é possível no paradigma orientado a objetos ter na mesma classe doi ou mais memtodos com o mesmo nome e cujo compotamente é difierente, 
+      isso é visivel porque, no momento de invocar metodo, você pode saber qual invocar,desde que sua assinatura seja diferente
+
+ -> O nome e  a quantidade, O tipo e a ordem dos parametros fazem parte da assinatura de um metodo e devemsr diferentes pra poder sobrecarregalo
+
