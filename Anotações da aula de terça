@@ -628,3 +628,54 @@ i++;
 
 *
 Numero: 1,2,3,4,5
+
+
+Laço Do-While
+
+  *
+
+do { 
+  //bloco de código
+  } while ( condição);
+
+
+Arrays
+
+"Listas são uma Facilidade da biblioteca Java"
+
+
+  Definição:
+    -> Estrutura que armazena multiplos valores do mesmo tipo
+  Vantagem: 
+    -> acesso rápido por indice
+  Limitação
+    -> Tamanho fixo
+
+"precisa declarar um novo array, para pegar todos os atigos e botar no novo, porque não a alocação na memoria"
+
+  EXP:.
+      *
+ Declaração                int [] a;
+                          int a[];
+
+ Inicialização direta     int[] c = { 10, 20, 30};
+
+ Inicialização com new      int [] b = new int [3];
+
+      *
+
+
+
+Arrays - acessando elementos
+
+indice começa sempre em 0 
+Uso de length para obter o tamanho
+
+  *  
+  String [] frutas = {"maçã", "Banana", "Laranja" };
+  System.out.println(frutas[0]); // maçã
+  System.out.println(frutas.length); // 3
+
+  *
+
+  
