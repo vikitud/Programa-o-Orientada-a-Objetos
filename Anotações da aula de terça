@@ -550,6 +550,13 @@ Estrutura de Decisão
   *
 
   
+  31/03/2026
   
-  
-  
+  fechar conteudo da av1
+
+Estruturas de repetição
+  -> são estruturas que permitem executar um bloco de instruções multiplas vezes;
+  -> também chamadas de loops.
+  -> são baseadas em:
+    -> condição -> executar enquanto for verdadeira
+    -> contagem -> exexcutar um numero fixo de vezes 
