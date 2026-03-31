@@ -735,3 +735,24 @@ Sobrecarga de metodos
 
  -> O nome e  a quantidade, O tipo e a ordem dos parametros fazem parte da assinatura de um metodo e devemsr diferentes pra poder sobrecarregalo
 
+Sobrecarga - Exemplo
+
+*
+
+public class Empregado{
+
+private String nome;
+private String arquivo;
+protected double salario;
+protected double descontos;
+
+public double calcularSalario(){
+return salario - desconto;
+
+}
+public double calcularSalario(double premio){
+return salario - descontos + premio;
+}
+
+   *
+
