@@ -1,0 +1,688 @@
+Perfeito. Agora vou fazer **EXATAMENTE igual fiz com banco de dados**:
+👉 resumão simples
+👉 simulado estilo prova
+👉 exercícios pra treinar
+
+E vou explicar tudo **no nível MAIS básico possível**, tipo “explicando pra uma porta” 😅
+
+---
+
+# 🧠 📄 RESUMÃO POO (1 PÁGINA PRA DECORAR)
+
+## 👤 1. O que é POO (Orientação a Objetos)
+
+👉 Pensa no mundo real:
+
+* Pessoa
+* Carro
+* Produto
+
+👉 Tudo isso vira **OBJETO no código**
+
+---
+
+## 📦 Objeto = Coisa com:
+
+* **Atributos** (características)
+  👉 nome, idade, preço
+
+* **Métodos** (ações)
+  👉 andar(), falar(), calcular()
+
+---
+
+## 🧱 Classe
+
+👉 É o **molde**
+
+Ex:
+
+```java
+class Pessoa {
+  String nome;
+}
+```
+
+👉 Classe = forma
+👉 Objeto = coisa criada
+
+---
+
+## 🧍 Criando objeto
+
+```java
+Pessoa p1 = new Pessoa();
+```
+
+👉 Tradução:
+“Criei uma pessoa”
+
+---
+
+## 🔑 Identificadores
+
+👉 Nome de variável, classe, etc
+
+✔ Pode começar com:
+
+* letra
+* _
+
+❌ Não pode:
+
+* número no começo
+
+👉 Case sensitive:
+
+* nome ≠ Nome
+
+---
+
+## 🧮 Tipos de dados
+
+* int → número inteiro
+* double → número com decimal
+* char → letra
+* boolean → true/false
+* String → texto
+
+---
+
+## 🔢 Operadores
+
+### Matemáticos
+
+* * * * /
+
+### Relacionais
+
+* > < >= <= == !=
+
+### Lógicos
+
+* && (E)
+* || (OU)
+* ! (NÃO)
+
+---
+
+## 🔧 Métodos
+
+👉 Função dentro da classe
+
+```java
+int soma(int a, int b){
+  return a + b;
+}
+```
+
+---
+
+## 🏗️ Construtor
+
+👉 Método especial que cria o objeto
+
+```java
+public Pessoa(String nome){
+  this.nome = nome;
+}
+```
+
+---
+
+## 🔥 THIS
+
+👉 Significa: “esse objeto aqui”
+
+```java
+this.nome = nome;
+```
+
+---
+
+## 🔁 Sobrecarga
+
+👉 Mesmo método, mas diferente
+
+```java
+calcular()
+calcular(double valor)
+```
+
+---
+
+## 🔒 Constantes
+
+```java
+final int VALOR = 10;
+```
+
+👉 Não muda nunca
+
+---
+
+## 🔄 IF / ELSE
+
+```java
+if (nota >= 7){
+  aprovado = true;
+}
+```
+
+---
+
+## 🔁 LAÇOS
+
+### FOR
+
+```java
+for(int i = 0; i < 5; i++)
+```
+
+### WHILE
+
+```java
+while(i < 5)
+```
+
+### DO WHILE
+
+```java
+do {} while(i < 5);
+```
+
+---
+
+## 📚 ARRAY
+
+👉 Lista
+
+```java
+int[] numeros = {1,2,3};
+```
+
+👉 Índice começa em 0
+
+---
+
+## 🔁 FOR COM ARRAY
+
+```java
+for(int i = 0; i < numeros.length; i++)
+```
+
+---
+
+## 🧠 WRAPPER
+
+👉 Tipo primitivo vira objeto
+
+* int → Integer
+* float → Float
+
+---
+
+# 📝 🧪 SIMULADO (NÍVEL PROVA)
+
+## 1.
+
+Classe é:
+A) Objeto criado
+B) Molde do objeto
+C) Método
+D) Variável
+
+---
+
+## 2.
+
+Objeto é:
+A) Classe
+B) Instância da classe
+C) Método
+D) Loop
+
+---
+
+## 3.
+
+Qual é tipo primitivo?
+A) String
+B) Integer
+C) int
+D) Scanner
+
+---
+
+## 4.
+
+Qual cria objeto?
+A) create
+B) new
+C) insert
+D) select
+
+---
+
+## 5.
+
+this serve para:
+A) Criar variável
+B) Referenciar o próprio objeto
+C) Fazer loop
+D) Comparar
+
+---
+
+## 6.
+
+Qual operador é lógico?
+A) +
+B) >
+C) &&
+D) =
+
+---
+
+## 7.
+
+Qual é um construtor?
+A)
+
+```java
+void Pessoa()
+```
+
+B)
+
+```java
+Pessoa(String nome)
+```
+
+C)
+
+```java
+int Pessoa()
+```
+
+D)
+
+```java
+new Pessoa
+```
+
+---
+
+## 8.
+
+Array começa em:
+A) 1
+B) -1
+C) 0
+D) 10
+
+---
+
+## 9.
+
+Qual é laço de repetição?
+A) if
+B) for
+C) class
+D) new
+
+---
+
+## 10.
+
+Sobrecarga é:
+A) Mesmo método com parâmetros diferentes
+B) Mesmo nome de variável
+C) Mesmo objeto
+D) Mesmo loop
+
+---
+
+# 🧠 💥 GABARITO
+
+1 → B
+2 → B
+3 → C
+4 → B
+5 → B
+6 → C
+7 → B
+8 → C
+9 → B
+10 → A
+
+---
+
+# 💻 🏋️ EXERCÍCIOS (TREINO)
+
+## 🔹 1. Criar classe Pessoa
+
+Com:
+
+* nome
+* idade
+
+---
+
+## 🔹 2. Criar construtor
+
+Recebendo nome e idade
+
+---
+
+## 🔹 3. Criar método
+
+```java
+void apresentar()
+```
+
+👉 Mostrar:
+"Meu nome é X"
+
+---
+
+## 🔹 4. Criar objeto
+
+```java
+Pessoa p1 = new Pessoa("Victor", 20);
+```
+
+---
+
+## 🔹 5. IF
+
+Mostrar:
+
+* "Aprovado" se nota >= 7
+
+---
+
+## 🔹 6. FOR
+
+Mostrar números de 1 a 10
+
+---
+
+## 🔹 7. ARRAY
+
+Criar lista com 3 nomes e imprimir
+
+---
+
+## 🔹 8. WHILE
+
+Contar de 1 até 5
+
+---
+
+# 🚀 DICA FINAL (SE CAIR NA PROVA)
+
+Decora isso aqui e já era:
+
+👉 Classe = molde
+👉 Objeto = coisa criada
+👉 this = objeto atual
+👉 construtor = cria objeto
+👉 array = lista
+👉 for = repetição
+
+---
+
+Se quiser, próximo nível eu posso fazer:
+
+🔥 **Simulado HARD (igual professor maldoso)**
+🔥 **Prova prática estilo “faça o código completo”**
+🔥 Ou revisar contigo questão por questão até tu zerar
+
+Só fala 👍
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+🧠 🧸 POO EXPLICADO IGUAL VIDA REAL (BEM BESTA MESMO)
+🧍‍♂️ 1. POO = Mundo real dentro do código
+
+Imagina:
+
+👉 Vida real:
+
+Pessoa
+Cachorro
+Produto
+
+👉 No Java vira:
+
+Objeto
+🍔 Exemplo simples
+
+👉 Um hambúrguer
+
+nome → X-Burger
+preço → 10
+
+👉 Isso é um objeto
+
+🧱 2. Classe = molde
+
+👉 Classe é tipo uma forma de fazer bolo
+
+class Produto {
+  String nome;
+  double preco;
+}
+
+👉 Isso NÃO é o produto ainda
+👉 É só o molde
+
+🍰 3. Objeto = coisa criada
+Produto p1 = new Produto();
+
+👉 Tradução:
+“Criei um produto”
+
+🏷️ 4. Identificadores (nomes)
+
+👉 É o nome das coisas
+
+✔ Pode:
+
+nome
+idade
+preco
+
+❌ Não pode:
+
+1nome (começar com número)
+🤯 Case sensitive (pegadinha)
+
+👉 Java é chato:
+
+nome ≠ Nome ≠ NOME
+
+👉 São coisas diferentes
+
+🔤 5. Tipos de dados (tipo de coisa)
+
+👉 Tipo da variável
+
+int → número inteiro (10)
+double → número com vírgula (10.5)
+String → texto ("João")
+boolean → true/false
+➕ 6. Operadores (contas)
+
+👉 Igual matemática
+
+soma
+subtrai
+multiplica
+/ divide
+⚖️ 7. Comparação
+
+👉 Tipo perguntar:
+
+é maior? >
+é menor? <
+é igual? ==
+
+Ex:
+
+if (nota >= 7)
+
+👉 “Passou?”
+
+🧠 8. Lógica
+
+👉 Tipo decisão:
+
+&& → E (os dois tem que ser verdade)
+|| → OU (um já serve)
+! → NÃO (inverte)
+🔧 9. Método (função)
+
+👉 É uma ação
+
+Ex:
+
+void falar(){
+  System.out.println("Oi");
+}
+
+👉 Tradução:
+“Faz algo”
+
+🏗️ 10. Construtor (MUUUUITO IMPORTANTE)
+
+👉 É o que cria o objeto já pronto
+
+public Produto(String nome){
+  this.nome = nome;
+}
+
+👉 Tradução:
+“Quando criar, já coloca o nome”
+
+🔥 11. THIS (CAI MUITO)
+
+👉 Significa:
+
+👉 “esse aqui mesmo”
+
+this.nome = nome;
+
+👉 Tradução:
+“o nome do objeto recebe o nome que veio”
+
+🔁 12. Sobrecarga
+
+👉 Mesmo nome, mas diferente
+
+calcular()
+calcular(double valor)
+
+👉 Tipo:
+
+calcular simples
+calcular com bônus
+🔒 13. CONSTANTE
+final int VALOR = 10;
+
+👉 Nunca muda
+
+🔀 14. IF / ELSE
+
+👉 Decisão
+
+if (nota >= 7){
+  System.out.println("Passou");
+}
+🔁 15. FOR (repetição)
+
+👉 Tipo contar:
+
+for(int i = 1; i <= 5; i++)
+
+👉 Vai de 1 até 5
+
+🔁 16. WHILE
+
+👉 Enquanto for verdade
+
+while(i <= 5)
+🔁 17. DO WHILE
+
+👉 Executa pelo menos 1 vez
+
+📚 18. ARRAY (lista)
+
+👉 Tipo lista de mercado
+
+String[] frutas = {"Maçã", "Banana"};
+
+👉 Índice começa em 0
+
+🧠 19. WRAPPER (pegadinha)
+
+👉 Tipo especial
+
+int → Integer
+float → Float
+
+👉 Serve pra tratar como objeto
+
+🔄 20. CONVERSÃO
+Explícita (forçada)
+int i = (int) 10.5;
+
+👉 vira 10
+
+Implícita (automática)
+double d = 10;
+🧪 21. EXEMPLO REAL (igual tua atividade)
+
+👉 Cliente compra produto
+
+👉 Tem:
+
+Cliente
+Produto
+Pedido
+
+👉 Pedido soma preços
+
+👉 Isso é POO na prática
+
+🧠 💥 RESUMO PRA DECORAR
+
+👉 Classe = molde
+👉 Objeto = coisa criada
+👉 this = objeto atual
+👉 construtor = cria objeto
+👉 if = decisão
+👉 for = repetição
+👉 array = lista
+
+🚨 PEGADINHAS DE PROVA
+
+🔥 professor AMA isso:
+
+diferença entre == e .equals()
+this
+construtor
+sobrecarga
+array começa em 0
+diferença int vs Integer
+🧠 DICA FINAL (SALVA PROVA)
+
+Se tu lembrar disso aqui, tu PASSA:
+
+👉 “Classe cria objeto”
+👉 “Construtor monta objeto”
+👉 “this é o próprio objeto”
+👉 “if decide”
+👉 “for repete”
