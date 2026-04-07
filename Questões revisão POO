@@ -1,0 +1,315 @@
+Base:
+
+"São 20h40 e Pedro chega à cafeteria SmartCoffee após sair da biblioteca. Como é o primeiro pedido dele no sistema, o atendente solicita seu nome completo e seu código de matrícula.
+
+
+
+O sistema registra essas informações e cria um cadastro do cliente.
+
+
+
+Pedro observa o painel digital e decide pedir um cappuccino e um croissant. 
+
+O atendente consulta o sistema e verifica que o cappuccino custa R$ 12 e o croissant custa R$ 14.
+
+
+
+O sistema também mostra que existem 18 cappuccinos disponíveis e 6 croissants.
+
+
+
+O atendente registra os produtos escolhidos e o sistema cria um pedido associado ao cliente.
+
+
+
+Antes de finalizar, Pedro pergunta se pode adicionar um chocolate quente. 
+
+O atendente verifica que ainda existem 4 unidades no estoque e adiciona ao pedido.
+
+
+
+O sistema então recalcula automaticamente o valor parcial do pedido.
+
+
+
+O gerente explica que existe uma promoção:
+
+Pedidos acima de R$ 40 recebem 10% de desconto.
+Pedidos acima de R$ 60 recebem 15%.
+
+
+O sistema verifica o valor total e aplica automaticamente o desconto correto.
+
+
+
+Antes de confirmar o pagamento, o sistema mostra:
+
+nome do cliente
+produtos escolhidos
+valor bruto
+valor desconto
+valor final
+
+
+Pedro confirma o pedido.
+
+O sistema registra:
+
+data
+hora
+cliente
+itens
+valor final
+
+
+Após a confirmação:
+
+o sistema reduz o estoque dos produtos vendidos.
+
+
+O gerente informa que o sistema também permite:
+
+
+
+consultar produtos
+
+verificar estoque
+
+mostrar pedidos
+
+
+Por enquanto o sistema não terá:
+
+login
+controle financeiro
+relatórios
+Essas funcionalidades serão feitas futuramente.
+
+
+
+Agora o objetivo é apenas validar a modelagem básica do sistema."
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+1) Identificação do Problema:
+
+
+
+Qual problema o sistema resolve?
+Quem usa o sistema?
+Quais operações principais existem?
+
+
+2)Jornadas dos Usuários:
+
+
+
+Liste as ações do:
+
+Cliente
+Atendente
+Sistema
+
+3)Identificando as entidades, características e comportamentos:
+
+
+
+Liste os objetos do sistema e os seus respectivos atributos e métodos.
+
+
+4)Identificando as regras do sistema:
+
+
+
+Liste todas regras encontradas no texto, referentes ao novo sistema que será desenvolvido:
+
+
+
+5)Diagrama de Classes:
+
+
+
+Desenhe o diagrama UML contendo:
+
+Classes
+Atributos (tipos e identificadores)
+Métodos (assinatura dos métodos)
+
+
+
+
+
+
+6)Construtores:
+
+
+
+Quais classes precisam:
+
+construtor vazio? Por quê?
+construtor com parâmetros? Por quê?
+
+
+
+7) Sobrecarga:
+
+
+
+Onde podemos usar:
+
+sobrecarga de construtor?
+sobrecarga de método?
+
+
+
+Estruturas de Decisão:
+
+
+
+Onde usar:
+
+if ?
+else if ?
+switch ?
+Justifique.
+
+
+8)Estruturas de repetição:
+
+
+
+Onde usar:
+
+for ?
+while ?
+do-while ?
+Explique.
+
+
+
+9) Uso de arrays
+
+
+
+Por que usar array?
+Quantos produtos um pedido deve suportar?
+Como controlar posições usadas?
+
+
+
+10)Identificação constantes e Variáveis de classe
+
+
+
+Existe alguma informação fixa?
+Exemplo:
+Percentual desconto.
+Transforme em constante.
+Existe algum valor que poderia ser compartilhado?
+Explique.
+
+
+
+11) Implemente:
+
+Atributos
+Construtores (se houver)
+método mostrarDados()
+
+
+12) Classe Produto
+
+
+
+Implemente:
+
+Atributos
+Construtores (se houver)
+temEstoque()
+mostrarProduto()
+baixarEstoque()
+
+
+13) Classe Pedido
+
+
+
+Implemente:
+
+Atributos (se houver)
+Construtores (se houver)
+Métodos necessário para realizar as operações do cenário descrito
+
+
+14)Classe Pedido
+
+
+
+Implemente:
+
+Atributos (se houver)
+Construtores (se houver)
+Métodos necessário para realizar as operações do cenário descrito
+
+
+15) Classe Main/Teste
+
+
+
+Implemente a classe de testes, contendo o método main, considerando que:
+
+Ler dados do cliente
+Criar objeto Cliente
+Criar objeto Pedido
+Mostrar menu de produtos
+Permitir adicionar produtos via switch
+Usar loop para repetição
+Calcular total
+Aplicar desconto
+Mostrar pedido final
+
+
+Exemplo esperado de saída:
+
+
+
+Digite nome:
+Pedro
+ 
+Digite RA:
+12345
+ 
+Escolha produto:
+ 
+1 Cappuccino - 12
+2 Croissant - 14
+3 Chocolate - 16
+4 Finalizar
+ 
+1
+ 
+Produto adicionado
+ 
+Escolha produto:
+2
+ 
+Produto adicionado
+ 
+Escolha produto:
+4
+ 
+Resumo:
+ 
+Cliente: Pedro
+Produtos:
+Cappuccino
+Croissant
+Total: 26
+ 
+Total final: 26
+
+
+
+16) 
+
