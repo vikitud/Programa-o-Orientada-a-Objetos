@@ -1,3 +1,39 @@
 
 modificadores de acesso
 
+public ( todo mmundo tem a classe )
+
+
++ pessoa
+
++cpf: string
+
++ cadastrarcpf(string):void
++ consultarcpf:string
+
+*
+
+public class teste{
+main(){
+pessoa p = new pessoa();
+p.cpf="ABC";
+
+*
+
+Private ( somente o povo dentro da coisa tem acesso, ) 
+}
+}
+
+*
+
+public class teste{
+
+main(){
+  Pessoa p = new PEssoa();
+  p.cpf = "ABC"
+  p.cadastrarcpf("DEF");
+  print(p.cpf)
+}
+}
+*
+
