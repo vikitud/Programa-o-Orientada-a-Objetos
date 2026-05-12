@@ -37,3 +37,60 @@ main(){
 }
 *
 
+porem:
+
+*
+Cadastrarcpf(string cpf)
+if(cpf.size
+*
+
+package ( somente mesmbros do pacote tem acesso ) 
+
+static ( acessa constante atravez da classe sem criar objeto, e mostrar quantos objetos foram criadas )
+
+*
+
+class main {
+  public static void main(String[] args){
+  contador c1 = new Contador();
+  System.out.println(c1.consultarNome());
+
+  new Contador();
+  Contador.mostrarTotal();
+
+  Contador c2 = new Contador();
+    System.out.println("Objetos criados: " + total);
+
+
+  public class Contador { 
+
+*
+
+protected ( elementos protegidos, terão acesso privados de pessoas ) 
+
+*
+
+public class animal { 
+protect string nome;
+protect void emitirSom(){
+system.out.println("som generico..");
+}
+}
+
+*
+
+Abstract ( definir o concetio sem permitir objetos nela, mas pode ter objetos ubstruidos ou abstratos) 
+
+*
+public class Contador{
+private String nome;
+private 
+
+public String getNome(){
+return "nome:  "+nome;
+}
+public void setNome(String nome){
+this.nome = nome+""
+}
+}
+*
