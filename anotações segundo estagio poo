@@ -108,6 +108,8 @@ Uma classe usa outra.
 
 Exemplo:
 
+*
+
 Classe Aluno
 Classe Curso
 Um aluno está em um curso.
@@ -118,11 +120,18 @@ class Curso {
 class Aluno {
     Curso curso;
 }
+
+*
+
+
 2. Agregação
 
 Uma classe “tem” outra, mas ambas podem existir separadas.
 
 Exemplo:
+
+*
+
 
 Time tem Jogadores
 O jogador pode existir sem o time.
@@ -131,6 +140,9 @@ class Jogador {}
 class Time {
     List<Jogador> jogadores;
 }
+
+*
+
 3. Composição
 
 Uma classe depende totalmente da outra.
@@ -139,6 +151,9 @@ Exemplo:
 
 Casa tem Quarto
 Se a casa for destruída, os quartos também deixam de existir.
+
+*
+
 class Quarto {}
 
 class Casa {
@@ -151,6 +166,10 @@ Uma classe apenas usa outra temporariamente.
 class Impressora {
     void imprimir(Documento doc) {}
 }
+
+*
+
+
 Herança
 
 Herança permite que uma classe herde características de outra.
@@ -159,6 +178,8 @@ Classe pai → superclasse
 Classe filha → subclasse
 
 A filha reutiliza atributos e métodos da pai.
+
+*
 
 Exemplo
 class Animal {
@@ -173,6 +194,8 @@ class Cachorro extends Animal {
     }
 }
 
+*
+
 Cachorro herda o método fazerSom() de Animal.
 
 Vantagens da herança
@@ -183,6 +206,8 @@ Permite especialização
 Polimorfismo com herança
 
 A classe filha pode sobrescrever métodos da pai.
+
+*
 
 class Animal {
     void som() {
@@ -196,6 +221,9 @@ class Gato extends Animal {
         System.out.println("Miau");
     }
 }
+
+*
+
 Resumo rápido
 Conceito	Ideia
 Associação	uma classe usa outra
@@ -203,5 +231,7 @@ Agregação	uma classe tem outra
 Composição	dependência total
 Dependência	uso temporário
 Herança	uma classe herda da outra
+
+
 
 
