@@ -94,3 +94,114 @@ this.nome = nome+""
 }
 }
 *
+
+
+19/05/2026
+
+Relacionamentos entre classes (POO)
+
+São formas de uma classe se conectar com outra.
+
+1. Associação
+
+Uma classe usa outra.
+
+Exemplo:
+
+Classe Aluno
+Classe Curso
+Um aluno está em um curso.
+class Curso {
+    String nome;
+}
+
+class Aluno {
+    Curso curso;
+}
+2. Agregação
+
+Uma classe “tem” outra, mas ambas podem existir separadas.
+
+Exemplo:
+
+Time tem Jogadores
+O jogador pode existir sem o time.
+class Jogador {}
+
+class Time {
+    List<Jogador> jogadores;
+}
+3. Composição
+
+Uma classe depende totalmente da outra.
+
+Exemplo:
+
+Casa tem Quarto
+Se a casa for destruída, os quartos também deixam de existir.
+class Quarto {}
+
+class Casa {
+    private Quarto quarto = new Quarto();
+}
+4. Dependência
+
+Uma classe apenas usa outra temporariamente.
+
+class Impressora {
+    void imprimir(Documento doc) {}
+}
+Herança
+
+Herança permite que uma classe herde características de outra.
+
+Classe pai → superclasse
+Classe filha → subclasse
+
+A filha reutiliza atributos e métodos da pai.
+
+Exemplo
+class Animal {
+    void fazerSom() {
+        System.out.println("Som");
+    }
+}
+
+class Cachorro extends Animal {
+    void latir() {
+        System.out.println("Au au");
+    }
+}
+
+Cachorro herda o método fazerSom() de Animal.
+
+Vantagens da herança
+Reutilização de código
+Organização
+Facilita manutenção
+Permite especialização
+Polimorfismo com herança
+
+A classe filha pode sobrescrever métodos da pai.
+
+class Animal {
+    void som() {
+        System.out.println("Som genérico");
+    }
+}
+
+class Gato extends Animal {
+    @Override
+    void som() {
+        System.out.println("Miau");
+    }
+}
+Resumo rápido
+Conceito	Ideia
+Associação	uma classe usa outra
+Agregação	uma classe tem outra
+Composição	dependência total
+Dependência	uso temporário
+Herança	uma classe herda da outra
+
+
