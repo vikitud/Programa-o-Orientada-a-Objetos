@@ -236,3 +236,28 @@ Herança	uma classe herda da outra
 Herança multipla
 horny
 herança - notações ( extends e super ) 
+
+
+26/05/2026
+
+
+Sobrecarga e sobrescrita
+
+- sobrecarga: usa a mesma ideia de função e resolução, porem faz dependendo de com vocÊ pedir pode mudar um pouco, mas fará a mesma coisa
+
+- diferença: basicamente os dois fazem a mesma coisa, mas a solução segue de forma diferente
+
+- subrescrita: escreve por cima do codigo, reescrevendo algo existente no relacionamento de herança, ou melhor,
+             seria a mesma forma de vc chamar o produto, mas ele resolve de uma forma diferente no passo a passo, mas resultando no mesmo produto.
+
+
+Polimorfismo
+
+"um mesmo comando, comportamentos diferentes dependendo do objeto real." ( o Pai é maior que filho, sempre feito de baixo ( filho ) pra cima ( pai) )
+
+Ligação Dinamica 
+
+" com uma referência podemos apontar para qualquer objeto "
+
+Casting 
+
